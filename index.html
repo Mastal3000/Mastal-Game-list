@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mastal Igraonica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Bangers', cursive;
+      background: url('https://cdn-0001.qstv.on.epicgames.com/gpXDbTUyFEBFcoQUAr/image/landscape_comp.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #FFD700;
+      text-shadow: -2px -2px 3px #000,
+                   2px -2px 3px #000,
+                  -2px  2px 3px #000,
+                   2px  2px 3px #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      letter-spacing: 3px;
+      animation: glow 2s infinite alternate;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Efekat vatrometa */
+    h1::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 5px;
+      height: 5px;
+      background: #FFD700;
+      border-radius: 50%;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    h1:hover::after {
+      animation: fireworks 1s ease-out infinite;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #000, 0 0 10px #FFD700; }
+      to   { text-shadow: 0 0 20px #000, 0 0 30px #FFD700; }
+    }
+
+    @keyframes fireworks {
+      0%   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+      50%  { opacity: 0.7; transform: translate(-150%, -150%) scale(2); }
+      100% { opacity: 0; transform: translate(-250%, -250%) scale(3); }
+    }
+
+    .games-container {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      padding: 20px 60px;
+    }
+
+    .games-list {
+      flex: 1;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+    }
+
+    .games-list ol { list-style: decimal; }
+
+    .games-list li { margin-bottom: 8px; }
+
+    .games-list a {
+      color: #FFD700;
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+      display: inline-block;
+    }
+
+    .games-list a:hover {
+      color: #FF4500;
+      text-shadow: 0 0 10px #FFD700;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Mastal Igraonica</h1>
+  </header>
+
+  <div class="games-container">
+    <!-- Leva kolona (1–30) -->
+    <div class="games-list">
+      <ol>
+        <li><a href="https://www.leagueoflegends.com" target="_blank">League of Legends</a></li>
+        <li><a href="https://www.epicgames.com/fortnite" target="_blank">Fortnite</a></li>
+        <li><a href="https://www.minecraft.net" target="_blank">Minecraft</a></li>
+        <li><a href="https://www.roblox.com" target="_blank">Roblox</a></li>
+        <li><a href="https://playvalorant.com" target="_blank">Valorant</a></li>
+        <li><a href="https://store.steampowered.com/app/730/" target="_blank">Counter-Strike 2</a></li>
+        <li><a href="https://www.dota2.com" target="_blank">Dota 2</a></li>
+        <li><a href="https://www.rockstargames.com/gta-v" target="_blank">GTA 5 Online</a></li>
+        <li><a href="https://www.rockstargames.com/gta-v" target="_blank">GTA V (Offline)</a></li>
+        <li><a href="https://www.warmane.com" target="_blank">World of Warcraft (Warmane)</a></li>
+        <li><a href="https://worldoftanks.com" target="_blank">World of Tanks</a></li>
+        <li><a href="https://www.callofduty.com/modernwarfare" target="_blank">Call of Duty: Modern Warfare</a></li>
+        <li><a href="https://www.callofduty.com/blackops" target="_blank">Call of Duty: Black Ops</a></li>
+        <li><a href="https://www.callofduty.com/blackops" target="_blank">Call of Duty: Black Ops 7</a></li>
+        <li><a href="https://www.callofduty.com/wwii" target="_blank">Call of Duty: WWII</a></li>
+        <li><a href="https://www.callofduty.com" target="_blank">Call of Duty: Nazi Zombies</a></li>
+        <li><a href="https://www.ea.com/games/battlefield" target="_blank">Battlefield 6</a></li>
+        <li><a href="https://pubg.com" target="_blank">PUBG</a></li>
+        <li><a href="https://www.rocketleague.com" target="_blank">Rocket League</a></li>
+        <li><a href="https://nba.2k.com/21/" target="_blank">NBA 2K21</a></li>
+        <li><a href="https://forza.net/horizon" target="_blank">Forza Horizon 5</a></li>
+        <li><a href="https://www.ubisoft.com/game/far-cry/far-cry-4" target="_blank">Far Cry 4</a></li>
+        <li><a href="https://www.warnerbros.com/games-and-apps/batman-arkham-city" target="_blank">Batman: Arkham City</a></li>
+        <li><a href="https://www.ioi.dk/hitman/" target="_blank">Hitman: World of Assassination</a></li>
+        <li><a href="https://www.rockstargames.com/reddeadredemption2" target="_blank">Red Dead Redemption 2</a></li>
+        <li><a href="https://www.playstation.com/god-of-war/" target="_blank">God of War Ragnarok</a></li>
+        <li><a href="https://www.residentevil.com/re4/" target="_blank">Resident Evil 4</a></li>
+        <li><a href="https://www.mortalkombat.com" target="_blank">Mortal Kombat 11</a></li>
+        <li><a href="https://www.ea.com/games/starwars/jedi-fallen-order" target="_blank">Star Wars Jedi: Fallen Order</a></li>
+        <li><a href="https://marvelrivals.com" target="_blank">Marvel Rivals</a></li>
+      </ol>
+    </div>
+    <!-- Desna kolona (31–60) -->
+    <div class="games-list">
+      <ol start="31">
+        <li><a href="https://mafiagame.com" target="_blank">Mafia 3</a></li>
+        <li><a href="https://store.steampowered.com/app/40950/" target="_blank">Stronghold Crusader</a></li>
+        <li><a href="https://www.grimdawn.com" target="_blank">Grim Dawn</a></li>
+        <li><a href="https://baldursgate3.game/" target="_blank">Baldur’s Gate 3</a></li>
+        <li><a href="https://eurotrucksimulator2.com" target="_blank">Euro Truck Simulator 2</a></li>
+        <li><a href="https://www.footballmanager.com" target="_blank">Football Manager 2024</a></li>
+        <li><a href="https://www.footballmanager.com" target="_blank">Football Manager 2008</a></li>
+        <li><a href="https://www.trackmania.com" target="_blank">Trackmania Turbo</a></li>
+        <li><a href="https://www.ea.com/games/need-for-speed/need
+        <li><a href="https://www.ea.com/games/need-for-speed/need-for-speed-most-wanted" target="_blank">Need for Speed: Most Wanted (2005)</a></li>
+        <li><a href="https://www.ea.com/games/need-for-speed/need-for-speed-payback" target="_blank">Need for Speed: Payback</a></li>
+        <li><a href="https://store.steampowered.com/app/4040/" target="_blank">Blur</a></li>
+        <li><a href="https://store.steampowered.com/app/274520/" target="_blank">Broforce</a></li>
+        <li><a href="https://www.stumbleguys.com" target="_blank">Stumble Guys</a></li>
+        <li><a href="https://us.shop.battle.net/en-us/product/warcraft-iii-reforged" target="_blank">Warcraft 3</a></li>
+        <li><a href="https://store.steampowered.com/app/32790/" target="_blank">Warblade</a></li>
+        <li><a href="https://turtle-wow.org" target="_blank">Turtle WoW</a></li>
+        <li><a href="https://www.l4d.com" target="_blank">Left 4 Dead 2</a></li>
+        <li><a href="https://store.steampowered.com/app/563570/" target="_blank">Candleman: The Complete Journey</a></li>
+        <li><a href="https://www.serioussam.com" target="_blank">Serious Sam: Second Encounter</a></li>
+        <li><a href="https://dbsz.bn-ent.net/en/" target="_blank">Dragon Ball Z: Kakarot</a></li>
+        <li><a href="https://dbsz.bn-ent.net/en/sparkingzero/" target="_blank">Dragon Ball: Sparking! ZERO</a></li>
+        <li><a href="https://www.wrc.com" target="_blank">WRC 10 Rally</a></li>
+        <li><a href="https://store.steampowered.com/app/2820/" target="_blank">Will Rock</a></li>
+        <li><a href="https://www.trine3.com" target="_blank">Trine 3: The Artifacts of Power</a></li>
+        <li><a href="https://store.steampowered.com/app/2700/" target="_blank">United Football</a></li>
+        <li><a href="https://www.orcsmustdie.com" target="_blank">Orcs Must Die! Unchained</a></li>
+        <li><a href="https://www.callistoprotocol.com" target="_blank">The Callisto Protocol</a></li>
+        <li><a href="https://www.counter-strike.net" target="_blank">Counter-Strike 1.6</a></li>
+        <li><a href="https://www.nexon.com" target="_blank">Counter-Strike 1.6 Zombie Nexon</a></li>
+        <li><a href="https://www.paradoxinteractive.com/games/hearts-of-iron-iv/about" target="_blank">Hearts of Iron IV</a></li>
+      </ol>
+    </div>
+  </div> <!-- kraj games-container -->
+
+</body>
+</html>
